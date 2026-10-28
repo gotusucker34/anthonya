@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2732"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <pattern id="grid1" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#2D9CDB" stroke-width="0.5" stroke-opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  <rect width="800" height="500" fill="url(#grid1)"/>
+  
+  <!-- Technical Frame -->
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#263342" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="440" fill="none" stroke="#2D9CDB" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Circuit / Stepper Motor Blueprint -->
+  <g transform="translate(180, 230)">
+    <!-- Motor body -->
+    <rect x="-90" y="-90" width="180" height="180" rx="10" fill="#263342" stroke="#2D9CDB" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="65" fill="#1D2732" stroke="#2D9CDB" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="28" fill="#131A22" stroke="#2D9CDB" stroke-width="2"/>
+    <circle cx="0" cy="0" r="10" fill="#2D9CDB"/>
+    <!-- Bolt holes -->
+    <circle cx="-65" cy="-65" r="7" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    <circle cx="65" cy="-65" r="7" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    <circle cx="-65" cy="65" r="7" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    <circle cx="65" cy="65" r="7" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="0" y="120" fill="#BAC6D1" font-family="monospace" font-size="12" text-anchor="middle">NEMA 23 STEPPER UNIT</text>
+  </g>
+
+  <!-- Control Board / Signals -->
+  <g transform="translate(560, 230)">
+    <rect x="-140" y="-110" width="280" height="220" rx="8" fill="#1B2631" stroke="#2D9CDB" stroke-width="2"/>
+    <rect x="-120" y="-90" width="100" height="80" rx="4" fill="#131A22" stroke="#62B7EE" stroke-width="1.5"/>
+    <text x="-70" y="-45" fill="#62B7EE" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">RPi GPIO</text>
+    
+    <!-- Driver IC -->
+    <rect x="20" y="-90" width="100" height="80" rx="4" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="70" y="-45" fill="#2D9CDB" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">TMC2209</text>
+
+    <!-- Signal traces -->
+    <path d="M -20 -50 L 20 -50" stroke="#62B7EE" stroke-width="2" stroke-dasharray="4 2"/>
+    <path d="M -70 -10 L -70 50 L 70 50 L 70 -10" fill="none" stroke="#2D9CDB" stroke-width="1.5"/>
+    <circle cx="-70" cy="50" r="4" fill="#2D9CDB"/>
+    <circle cx="70" cy="50" r="4" fill="#2D9CDB"/>
+    <text x="0" y="85" fill="#BAC6D1" font-family="monospace" font-size="12" text-anchor="middle">UART / STEP-DIR INTERFACE</text>
+  </g>
+
+  <!-- Connective bus -->
+  <path d="M 270 230 L 420 230" stroke="#2D9CDB" stroke-width="3" stroke-dasharray="8 4"/>
+  <circle cx="345" cy="230" r="16" fill="#131A22" stroke="#2D9CDB" stroke-width="2"/>
+  <text x="345" y="235" fill="#62B7EE" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">PWM</text>
+
+  <!-- Header label -->
+  <rect x="40" y="45" width="290" height="30" fill="#131A22" stroke="#2D9CDB" stroke-width="1"/>
+  <text x="55" y="65" fill="#2D9CDB" font-family="monospace" font-size="12" font-weight="bold">CASE STUDY // AUTOMATION & PROTOTYPING</text>
+  <text x="40" y="445" fill="#BAC6D1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Raspberry Pi Multi-Axis Stepper Control Platform</text>
+  <text x="760" y="445" fill="#2D9CDB" font-family="monospace" font-size="12" text-anchor="end">SYS_ID: EMB-STP-01</text>
+</svg>

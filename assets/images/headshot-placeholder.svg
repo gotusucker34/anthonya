@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2732"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D9CDB"/>
+      <stop offset="100%" stop-color="#1B6B98"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2D9CDB" stroke-width="0.75" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="700" fill="url(#bg)"/>
+  <rect width="600" height="700" fill="url(#grid)"/>
+  
+  <!-- Technical Framing -->
+  <rect x="25" y="25" width="550" height="650" fill="none" stroke="#2D9CDB" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="15" y1="25" x2="45" y2="25" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="25" y1="15" x2="25" y2="45" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="555" y1="25" x2="585" y2="25" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="575" y1="15" x2="575" y2="45" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="15" y1="675" x2="45" y2="675" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="25" y1="655" x2="25" y2="685" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="555" y1="675" x2="585" y2="675" stroke="#2D9CDB" stroke-width="2"/>
+  <line x1="575" y1="655" x2="575" y2="685" stroke="#2D9CDB" stroke-width="2"/>
+  
+  <!-- Silhouette / Placeholder Graphic -->
+  <g transform="translate(300, 320)">
+    <!-- Shoulders -->
+    <path d="M -130 180 C -130 90, -60 70, 0 70 C 60 70, 130 90, 130 180 Z" fill="#263342" stroke="#2D9CDB" stroke-width="2" stroke-opacity="0.4"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="-20" rx="65" ry="85" fill="#263342" stroke="#2D9CDB" stroke-width="2" stroke-opacity="0.5"/>
+    <!-- Technical reticle -->
+    <circle cx="0" cy="-20" r="110" fill="none" stroke="#2D9CDB" stroke-width="1" stroke-dasharray="6 6" stroke-opacity="0.35"/>
+    <line x1="-130" y1="-20" x2="-80" y2="-20" stroke="#2D9CDB" stroke-width="1.5" stroke-opacity="0.5"/>
+    <line x1="80" y1="-20" x2="130" y2="-20" stroke="#2D9CDB" stroke-width="1.5" stroke-opacity="0.5"/>
+    <line x1="0" y1="-150" x2="0" y2="-100" stroke="#2D9CDB" stroke-width="1.5" stroke-opacity="0.5"/>
+    <line x1="0" y1="60" x2="0" y2="90" stroke="#2D9CDB" stroke-width="1.5" stroke-opacity="0.5"/>
+  </g>
+  
+  <!-- Text Badges -->
+  <rect x="180" y="550" width="240" height="36" rx="4" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5" stroke-opacity="0.8"/>
+  <text x="300" y="573" fill="#F3F6F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="14" font-weight="600" letter-spacing="1.5" text-anchor="middle">ANTHONY AUGHENBAUGH</text>
+  <text x="300" y="605" fill="#BAC6D1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle">Professional Headshot Placeholder</text>
+  <text x="300" y="625" fill="#2D9CDB" font-family="monospace" font-size="11" text-anchor="middle">ASPECT RATIO 1:1.15 • READY FOR UPLOAD</text>
+</svg>

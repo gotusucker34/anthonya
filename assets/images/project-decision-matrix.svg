@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2732"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <pattern id="grid4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2D9CDB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg4)"/>
+  <rect width="800" height="500" fill="url(#grid4)"/>
+
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#263342" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="440" fill="none" stroke="#2D9CDB" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Decision Matrix Graph / Tradeoff Curves -->
+  <g transform="translate(80, 100)">
+    <!-- Axis lines -->
+    <line x1="60" y1="260" x2="620" y2="260" stroke="#BAC6D1" stroke-width="2"/>
+    <line x1="60" y1="260" x2="60" y2="20" stroke="#BAC6D1" stroke-width="2"/>
+
+    <!-- Axis Labels -->
+    <text x="340" y="295" fill="#BAC6D1" font-family="monospace" font-size="12" text-anchor="middle">PRODUCTION BATCH VOLUME (UNITS) →</text>
+    <text x="-140" y="25" fill="#BAC6D1" font-family="monospace" font-size="12" transform="rotate(-90)" text-anchor="middle">TOTAL UNIT COST ($) →</text>
+
+    <!-- Curve 1: Additive Prototyping -->
+    <path d="M 70 70 Q 200 120 580 180" fill="none" stroke="#BAC6D1" stroke-width="2" stroke-dasharray="6 3"/>
+    <text x="590" y="185" fill="#BAC6D1" font-family="monospace" font-size="11">Additive / SLS</text>
+
+    <!-- Curve 2: 3-Axis CNC Machining -->
+    <path d="M 70 210 Q 180 80 580 95" fill="none" stroke="#2D9CDB" stroke-width="2.5"/>
+    <text x="590" y="100" fill="#2D9CDB" font-family="monospace" font-size="11">CNC Machining</text>
+
+    <!-- Curve 3: Die Cast / Hard Tooling -->
+    <path d="M 70 255 Q 120 250 580 35" fill="none" stroke="#62B7EE" stroke-width="2"/>
+    <text x="590" y="40" fill="#62B7EE" font-family="monospace" font-size="11">Tooling / Injection</text>
+
+    <!-- Intersection / Crossover Point highlight -->
+    <circle cx="270" cy="115" r="7" fill="#62B7EE" stroke="#131A22" stroke-width="2"/>
+    <line x1="270" y1="115" x2="270" y2="260" stroke="#62B7EE" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <rect x="210" y="60" width="120" height="30" rx="3" fill="#131A22" stroke="#62B7EE" stroke-width="1"/>
+    <text x="270" y="80" fill="#F3F6F9" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">CUTOVER: 450 PCS</text>
+  </g>
+
+  <!-- Header label -->
+  <rect x="40" y="45" width="280" height="30" fill="#131A22" stroke="#2D9CDB" stroke-width="1"/>
+  <text x="55" y="65" fill="#2D9CDB" font-family="monospace" font-size="12" font-weight="bold">CASE STUDY // ANALYSIS & DECISIONS</text>
+  <text x="40" y="445" fill="#BAC6D1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Engineering Release & Capital Production Decision Matrix</text>
+  <text x="760" y="445" fill="#2D9CDB" font-family="monospace" font-size="12" text-anchor="end">SYS_ID: ANL-REL-04</text>
+</svg>

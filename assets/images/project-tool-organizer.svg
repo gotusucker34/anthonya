@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2732"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2D9CDB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#263342" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="440" fill="none" stroke="#2D9CDB" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- CAD / Modular Tooling Grid Representation -->
+  <g transform="translate(100, 110)">
+    <!-- Base Tray Frame -->
+    <rect x="0" y="0" width="600" height="260" rx="6" fill="#1B2631" stroke="#2D9CDB" stroke-width="2"/>
+    
+    <!-- Tool pockets -->
+    <!-- Collet sockets -->
+    <g fill="#131A22" stroke="#2D9CDB" stroke-width="1.5">
+      <circle cx="50" cy="50" r="28"/><circle cx="120" cy="50" r="28"/><circle cx="190" cy="50" r="28"/>
+      <circle cx="260" cy="50" r="28"/><circle cx="330" cy="50" r="28"/><circle cx="400" cy="50" r="28"/>
+      <circle cx="470" cy="50" r="28"/><circle cx="540" cy="50" r="28"/>
+      
+      <!-- Center bore markers -->
+      <circle cx="50" cy="50" r="14" fill="#263342"/><circle cx="120" cy="50" r="14" fill="#263342"/>
+      <circle cx="190" cy="50" r="14" fill="#263342"/><circle cx="260" cy="50" r="14" fill="#263342"/>
+      <circle cx="330" cy="50" r="14" fill="#263342"/><circle cx="400" cy="50" r="14" fill="#263342"/>
+      <circle cx="470" cy="50" r="14" fill="#263342"/><circle cx="540" cy="50" r="14" fill="#263342"/>
+    </g>
+
+    <!-- Tool Holders / Endmill Slots -->
+    <rect x="30" y="105" width="250" height="130" rx="4" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    <line x1="30" y1="150" x2="280" y2="150" stroke="#2D9CDB" stroke-width="1" stroke-dasharray="4 2"/>
+    <line x1="30" y1="190" x2="280" y2="190" stroke="#2D9CDB" stroke-width="1" stroke-dasharray="4 2"/>
+    <text x="155" y="175" fill="#BAC6D1" font-family="monospace" font-size="12" text-anchor="middle">CAT40 / BT30 TAPER BAY</text>
+
+    <!-- Caliper / Micrometer Custom Nest -->
+    <rect x="300" y="105" width="270" height="130" rx="4" fill="#131A22" stroke="#62B7EE" stroke-width="1.5"/>
+    <!-- Caliper silhouette -->
+    <path d="M 320 170 L 530 170 L 530 150 L 515 150 L 515 165 L 340 165 L 340 145 L 320 145 Z" fill="#263342" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="435" y="210" fill="#62B7EE" font-family="monospace" font-size="11" text-anchor="middle">PRECISION METROLOGY SHADOW NEST</text>
+  </g>
+
+  <!-- Header label -->
+  <rect x="40" y="45" width="270" height="30" fill="#131A22" stroke="#2D9CDB" stroke-width="1"/>
+  <text x="55" y="65" fill="#2D9CDB" font-family="monospace" font-size="12" font-weight="bold">CASE STUDY // CAD & MANUFACTURING</text>
+  <text x="40" y="445" fill="#BAC6D1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Modular High-Density CNC Tooling & Storage System</text>
+  <text x="760" y="445" fill="#2D9CDB" font-family="monospace" font-size="12" text-anchor="end">SYS_ID: MFG-CAD-02</text>
+</svg>

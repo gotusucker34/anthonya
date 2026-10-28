@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2732"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2D9CDB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <rect width="800" height="500" fill="url(#grid3)"/>
+
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#263342" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="440" fill="none" stroke="#2D9CDB" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Plant / Facility Layout Flow Diagram -->
+  <g transform="translate(60, 100)">
+    <!-- Perimeter -->
+    <rect x="0" y="0" width="680" height="280" fill="none" stroke="#2D9CDB" stroke-width="2" stroke-dasharray="10 4"/>
+
+    <!-- Station 1: Raw Material Receiving -->
+    <rect x="30" y="30" width="120" height="100" rx="4" fill="#1B2631" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="90" y="75" fill="#F3F6F9" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">RECEIVING</text>
+    <text x="90" y="95" fill="#BAC6D1" font-family="sans-serif" font-size="10" text-anchor="middle">Bar / Billet Stock</text>
+
+    <!-- Station 2: CNC Milling Cell A -->
+    <rect x="200" y="30" width="130" height="100" rx="4" fill="#263342" stroke="#62B7EE" stroke-width="2"/>
+    <text x="265" y="75" fill="#62B7EE" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">CNC CELL A</text>
+    <text x="265" y="95" fill="#BAC6D1" font-family="sans-serif" font-size="10" text-anchor="middle">3-Axis Roughing</text>
+
+    <!-- Station 3: CNC Milling Cell B -->
+    <rect x="380" y="30" width="130" height="100" rx="4" fill="#263342" stroke="#62B7EE" stroke-width="2"/>
+    <text x="445" y="75" fill="#62B7EE" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">CNC CELL B</text>
+    <text x="445" y="95" fill="#BAC6D1" font-family="sans-serif" font-size="10" text-anchor="middle">5-Axis Finishing</text>
+
+    <!-- Station 4: Deburr & Wash -->
+    <rect x="380" y="160" width="130" height="90" rx="4" fill="#1B2631" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="445" y="205" fill="#F3F6F9" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">DEBURR & WASH</text>
+    <text x="445" y="225" fill="#BAC6D1" font-family="sans-serif" font-size="10" text-anchor="middle">Ultrasonic Clean</text>
+
+    <!-- Station 5: Quality Inspection (CMM) -->
+    <rect x="200" y="160" width="130" height="90" rx="4" fill="#1B2631" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="265" y="205" fill="#F3F6F9" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">QUALITY CMM</text>
+    <text x="265" y="225" fill="#BAC6D1" font-family="sans-serif" font-size="10" text-anchor="middle">GD&T Inspection</text>
+
+    <!-- Station 6: Pack & Shipping -->
+    <rect x="30" y="160" width="120" height="90" rx="4" fill="#1B2631" stroke="#2D9CDB" stroke-width="1.5"/>
+    <text x="90" y="205" fill="#F3F6F9" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">SHIPPING</text>
+    <text x="90" y="225" fill="#BAC6D1" font-family="sans-serif" font-size="10" text-anchor="middle">Outbound Dock</text>
+
+    <!-- Material Flow Arrows (U-shaped cellular flow) -->
+    <path d="M 150 80 L 195 80" stroke="#2D9CDB" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <path d="M 330 80 L 375 80" stroke="#2D9CDB" stroke-width="2.5"/>
+    <path d="M 445 130 L 445 155" stroke="#2D9CDB" stroke-width="2.5"/>
+    <path d="M 380 205 L 335 205" stroke="#2D9CDB" stroke-width="2.5"/>
+    <path d="M 200 205 L 155 205" stroke="#2D9CDB" stroke-width="2.5"/>
+
+    <!-- Central Aisle Label -->
+    <rect x="540" y="80" width="110" height="120" rx="4" fill="#131A22" stroke="#2D9CDB" stroke-width="1" stroke-dasharray="4 2"/>
+    <text x="595" y="135" fill="#2D9CDB" font-family="monospace" font-size="11" text-anchor="middle">KANBAN WIP</text>
+    <text x="595" y="155" fill="#BAC6D1" font-family="monospace" font-size="10" text-anchor="middle">BUFFER STAGING</text>
+  </g>
+
+  <!-- Header label -->
+  <rect x="40" y="45" width="310" height="30" fill="#131A22" stroke="#2D9CDB" stroke-width="1"/>
+  <text x="55" y="65" fill="#2D9CDB" font-family="monospace" font-size="12" font-weight="bold">CASE STUDY // MANUFACTURING ENGINEERING</text>
+  <text x="40" y="445" fill="#BAC6D1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Cellular Manufacturing Facility Layout & Flow Optimization</text>
+  <text x="760" y="445" fill="#2D9CDB" font-family="monospace" font-size="12" text-anchor="end">SYS_ID: IE-FLO-03</text>
+</svg>

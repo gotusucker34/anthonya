@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2732"/>
+      <stop offset="100%" stop-color="#131A22"/>
+    </linearGradient>
+    <pattern id="grid5" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2D9CDB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg5)"/>
+  <rect width="800" height="500" fill="url(#grid5)"/>
+
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#263342" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="440" fill="none" stroke="#2D9CDB" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- CNC Machining Toolpath & Workholding Vector Blueprint -->
+  <g transform="translate(140, 110)">
+    <!-- Vise / Fixture jaws -->
+    <rect x="0" y="70" width="520" height="150" rx="4" fill="#1B2631" stroke="#2D9CDB" stroke-width="2"/>
+    
+    <!-- Machined workpiece with pocket and contours -->
+    <rect x="70" y="90" width="380" height="110" rx="2" fill="#263342" stroke="#62B7EE" stroke-width="2"/>
+    
+    <!-- Milled Pocket -->
+    <rect x="130" y="115" width="260" height="60" rx="12" fill="#131A22" stroke="#2D9CDB" stroke-width="1.5"/>
+    
+    <!-- Adaptive Trochoidal Toolpath Loops -->
+    <path d="M 150 145 C 160 130, 180 130, 190 145 C 200 160, 220 160, 230 145 C 240 130, 260 130, 270 145 C 280 160, 300 160, 310 145 C 320 130, 340 130, 350 145 C 360 160, 370 145, 370 145" fill="none" stroke="#62B7EE" stroke-width="2" stroke-dasharray="3 3"/>
+    
+    <!-- Spindle / Cutter Vector Point -->
+    <circle cx="360" cy="145" r="9" fill="#2D9CDB" stroke="#F3F6F9" stroke-width="2"/>
+    <line x1="360" y1="95" x2="360" y2="135" stroke="#F3F6F9" stroke-width="2"/>
+
+    <!-- Tooling coordinates / readout -->
+    <rect x="130" y="235" width="260" height="30" rx="3" fill="#131A22" stroke="#2D9CDB" stroke-width="1"/>
+    <text x="260" y="255" fill="#62B7EE" font-family="monospace" font-size="11" text-anchor="middle">CHIP LOAD: 0.0035 IPT • SPEED: 750 SFM</text>
+  </g>
+
+  <!-- Header label -->
+  <rect x="40" y="45" width="270" height="30" fill="#131A22" stroke="#2D9CDB" stroke-width="1"/>
+  <text x="55" y="65" fill="#2D9CDB" font-family="monospace" font-size="12" font-weight="bold">CASE STUDY // CNC & MANUFACTURING</text>
+  <text x="40" y="445" fill="#BAC6D1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">High-Efficiency CNC Trochoidal Milling & Fixturing Strategy</text>
+  <text x="760" y="445" fill="#2D9CDB" font-family="monospace" font-size="12" text-anchor="end">SYS_ID: CNC-OPT-05</text>
+</svg>
